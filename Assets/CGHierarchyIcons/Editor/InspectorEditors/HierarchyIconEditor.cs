@@ -11,6 +11,7 @@ namespace CGHierarchyIconsEditor
         SerializedProperty m_iconProperty;
         SerializedProperty m_tooltipProperty;
         SerializedProperty m_positionProperty;
+        SerializedProperty m_directionProperty;
         HierarchyIcon m_hierarchyIcon;
 
         const float ICON_BUTTON_SIZE = 28;
@@ -20,17 +21,27 @@ namespace CGHierarchyIconsEditor
             m_iconProperty = serializedObject.FindProperty("icon");
             m_tooltipProperty = serializedObject.FindProperty("tooltip");
             m_positionProperty = serializedObject.FindProperty("position");
+            m_directionProperty = serializedObject.FindProperty("direction");
             m_hierarchyIcon = target as HierarchyIcon;
         }
 
         public override void OnInspectorGUI()
         {
-            // draw the script header
-            {
-                GUI.enabled = false;
-                DrawPropertiesExcluding(serializedObject, m_iconProperty.name, m_tooltipProperty.name, m_positionProperty.name);
-                GUI.enabled = true;
-            }
+            #region DRAW SCRIPT HEADER
+
+            GUI.enabled = false;
+
+            DrawPropertiesExcluding(
+                serializedObject,
+                m_iconProperty.name,
+                m_tooltipProperty.name,
+                m_positionProperty.name,
+                m_directionProperty.name
+            );
+
+            GUI.enabled = true;
+
+            #endregion
 
             // Update the serializedProperty - always do this in the beginning of OnInspectorGUI.
             serializedObject.Update();
@@ -66,6 +77,18 @@ namespace CGHierarchyIconsEditor
 
             EditorGUI.BeginChangeCheck();
             EditorGUILayout.PropertyField(m_positionProperty);
+            if (EditorGUI.EndChangeCheck())
+            {
+                // repaint the hierarchy
+                EditorApplication.RepaintHierarchyWindow();
+            }
+
+            #endregion
+
+            #region DIRECTION
+
+            EditorGUI.BeginChangeCheck();
+            EditorGUILayout.PropertyField(m_directionProperty);
             if (EditorGUI.EndChangeCheck())
             {
                 // repaint the hierarchy

@@ -27,10 +27,15 @@ namespace CGHierarchyIconsEditor
                 float width = Mathf.Min(icon.width, MAX_ICON_SIZE);
                 float height = Mathf.Min(icon.height, MAX_ICON_SIZE);
 
-                float x = selectionRect.x + selectionRect.width - width - hierarchyIcon.position * MAX_ICON_SIZE - 1;
-                Rect rect = new Rect(x, selectionRect.y, width, height);
+                // get the starting x position based on the direction
+                float x = selectionRect.x;
+                if (hierarchyIcon.direction == HierarchyIcon.Direction.LeftToRight)
+                    x += hierarchyIcon.position * MAX_ICON_SIZE;
+                else
+                    x += (selectionRect.width - width) - hierarchyIcon.position * MAX_ICON_SIZE;
 
                 // draw the icon
+                Rect rect = new Rect(x, selectionRect.y, width, height);
                 GUI.DrawTexture(rect, icon);
 
                 // set link cursor

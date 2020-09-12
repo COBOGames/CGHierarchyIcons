@@ -155,6 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: -6398683131212242302, guid: 0000000000000000d000000000000000, type: 0}
   position: 0
+  direction: 0
   tooltip: 
 --- !u!1 &105662418
 GameObject:
@@ -198,6 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
   position: 0
+  direction: 0
   tooltip: 
 --- !u!1 &397681479
 GameObject:
@@ -229,6 +231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 8872333681490167307, guid: 0000000000000000d000000000000000, type: 0}
   position: 0
+  direction: 0
   tooltip: This is the GameManager
 --- !u!4 &397681481
 Transform:
@@ -256,6 +259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 5425037494185492166, guid: 0000000000000000d000000000000000, type: 0}
   position: 1
+  direction: 0
   tooltip: This Manager use Object.DontDestroyOnLoad()
 --- !u!1 &519420028
 GameObject:
@@ -295,6 +299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 6338563257489195420, guid: 0000000000000000d000000000000000, type: 0}
   position: 0
+  direction: 0
   tooltip: Main Camera
 --- !u!20 &519420031
 Camera:
@@ -391,6 +396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 4978307288704543194, guid: 0000000000000000d000000000000000, type: 0}
   position: 0
+  direction: 0
   tooltip: 
 --- !u!1 &554084497
 GameObject:
@@ -421,6 +427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: -1123978968931220871, guid: 0000000000000000d000000000000000, type: 0}
   position: 0
+  direction: 0
   tooltip: 
 --- !u!4 &554084499
 Transform:
@@ -477,6 +484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 3099466108739435423, guid: 0000000000000000d000000000000000, type: 0}
   position: 0
+  direction: 0
   tooltip: 
 --- !u!1 &1244390348
 GameObject:
@@ -507,6 +515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: -6398683131212242302, guid: 0000000000000000d000000000000000, type: 0}
   position: 0
+  direction: 0
   tooltip: 
 --- !u!4 &1244390350
 Transform:
@@ -566,6 +575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: -6398683131212242302, guid: 0000000000000000d000000000000000, type: 0}
   position: 0
+  direction: 0
   tooltip: 
 --- !u!1 &1873283118
 GameObject:
@@ -609,6 +619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: -6398683131212242302, guid: 0000000000000000d000000000000000, type: 0}
   position: 0
+  direction: 0
   tooltip: 
 --- !u!1 &2076569603
 GameObject:
@@ -639,6 +650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 656655089447870219, guid: 0000000000000000d000000000000000, type: 0}
   position: 0
+  direction: 0
   tooltip: 
 --- !u!4 &2076569605
 Transform:
@@ -700,4 +712,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 901774759342009711, guid: 0000000000000000d000000000000000, type: 0}
   position: 0
+  direction: 0
   tooltip: 

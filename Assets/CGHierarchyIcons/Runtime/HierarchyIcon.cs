@@ -6,12 +6,19 @@ namespace HierarchyIcons
     {
 #if UNITY_EDITOR
         public Texture2D icon;
-
-        [Range(0, 5), Tooltip("Right to left position")]
+        
+        [Range(-3, 5)]
         public int position;
+        public Direction direction = Direction.RightToLeft;
 
         [TextArea]
         public string tooltip;
+        
+        public enum Direction
+        {
+            RightToLeft,
+            LeftToRight
+        }
 #endif
     }
 }
