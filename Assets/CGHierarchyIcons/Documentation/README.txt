@@ -1,7 +1,7 @@
 ﻿-----------------------
 |     DESCRIPTION     |
 -----------------------
-CGHierarchyIcons is a simple package used to show an icon at the right of the GameObjects' names in the HierarchyView.
+CGHierarchyIcons is a simple package used to show an icon at the right or left of GameObjects in the HierarchyView.
 
 It is composed of a simple script that is added to GameObjects and through an editor script you can select the icon and add an optional tooltip.
 You can select as icon all the textures Unity can reference, including yours in the ProjectView.
@@ -10,7 +10,7 @@ You can select as icon all the textures Unity can reference, including yours in 
 |        NOTES        |
 -----------------------
 - The properties of the HierarchyIcon script are only compiled in the Unity Editor.
-- After you build your project, all instances of the HierarchyIcon attached to game objects are destroyed from the scenes since they are unuseless on build.
+- After you build your project, all instances of the HierarchyIcon attached to game objects are destroyed from the scenes since they are useless on build.
 
 -----------------------
 |        LINKS        |
